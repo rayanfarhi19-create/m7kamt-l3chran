@@ -3,7 +3,7 @@ import "./style.css";
 
 const charges=["Kaygol 'ana jay' w howa ba9i f dar","Kaychouf message w ma kayjawbch","Kaygol 'derniere game' w kayb9a sa3tin","Kayji ghir mlli kayna lmakla","Kayakol men plat dyal koulchi","Kaykmel flos chhar f simana lwla"];
 const punishments=["Ykhless tacos l3chran kamlin 🌮","Y7et akhir conversation f story 24h 📱","Y3red 3la atay w msemen 🫖","L3chran ytfa9o kamlin 3la 7okma wa7da ⚖","Ydwech b 7wayjo w yswrha lina dalil 🚿","Ysift l akhir personne dwa m3aha: 'Rak m3rod l M7kamt L3chran' 😂"];
-const url=import.meta.env.VITE_SUPABASE_URL,key=import.meta.env.VITE_SUPABASE_ANON_KEY;
+const url=import.meta.env.VITE_SUPABASE_URL||import.meta.env.NEXT_PUBLIC_SUPABASE_URL,key=import.meta.env.VITE_SUPABASE_ANON_KEY||import.meta.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 const db=url&&key?createClient(url,key):null;
 const app=document.querySelector("#app");
 let caseFile=null;
