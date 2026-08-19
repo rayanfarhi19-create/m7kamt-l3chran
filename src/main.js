@@ -1,5 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
+import { inject } from "@vercel/analytics";
 import "./style.css";
+
+inject();
 
 const customCharge="Kteb tohmaa dyalk ✍️";
 const customPunishment="Kteb l3o9oba dyalk ✍️";
